@@ -3,7 +3,7 @@
 Front End Development Libraries Certification.
 FreeCodeCamp fourth exercise.
 
-[Link to the site!](https://gonzalo-fuente.github.io/JavaScript_Calculator/)
+[Link to the site!](https://gonzalo-fuente.github.io/Javascript_Calculator/)
 
 Fulfill the below user stories and get all of the tests to pass. Give it your own personal style.
 
