@@ -1,13 +1,65 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Button Styles */
+.btn {
+  @apply px-7 py-5 text-gray-700 text-xl rounded-full hover:text-white hover:ease-out duration-200;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.btn-num {
+  @apply btn;
+  background-color: rgba(35, 166, 213, 0.2);
+}
+.btn-num:hover {
+  background-color: rgba(35, 166, 213, 0.5);
+}
+
+.btn-op {
+  @apply btn;
+  background-color: rgba(238, 119, 82, 0.2);
+}
+.btn-op:hover {
+  background-color: rgba(238, 119, 82, 0.5);
+}
+
+.btn-cl {
+  @apply btn;
+  background-color: rgba(231, 60, 126, 0.3);
+}
+.btn-cl:hover {
+  background-color: rgba(231, 60, 126, 0.6);
+}
+
+.btn-eq {
+  @apply btn;
+  background-color: rgba(35, 213, 171, 0.3);
+}
+.btn-eq:hover {
+  background-color: rgba(35, 213, 171, 0.6);
+}
+
+.ovf {
+  overflow: hidden;
+  text-overflow: clip;
+}
+
+/* Background Animation */
+body {
+  background: linear-gradient(-45deg, #ffafbd, #ffc3a0, #43cea2, #185a9d);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
